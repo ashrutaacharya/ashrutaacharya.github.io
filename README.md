@@ -19,5 +19,22 @@ Static personal website for an academic/professional job-market year.
 
 ## Publishing Notes
 
-This repository is public and can host a static GitHub Pages site if Pages is enabled in repository settings.
-The public CV is included as `cv.pdf` at the repository root.
+The website is published by GitHub Pages from the `main` branch of
+`ashrutaacharya/ashrutaacharya.github.io` at https://ashrutaacharya.github.io/.
+The `origin` remote points to this website repository. The separate GitHub profile
+repository is retained as the `profile` remote.
+
+After saving website edits, stage the files you changed, commit, and push. For example:
+
+```sh
+git add index.html styles.css
+git commit -m "Update website"
+git push origin main
+```
+
+Wait for the **pages build and deployment** workflow to finish in GitHub Actions,
+then refresh the live website. Saving a local file or refreshing a browser does
+not publish local changes.
+
+The public CV is included as `cv.pdf` at the repository root. Stage that file
+explicitly when updating it.
