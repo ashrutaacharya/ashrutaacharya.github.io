@@ -1,15 +1,15 @@
 :root {
   color-scheme: light;
-  --ink: #171512;
-  --muted: #5f625c;
-  --paper: #fffdf8;
-  --wash: #f2f4ee;
-  --line: #d8ded2;
-  --green: #164b3b;
-  --rust: #9c3f25;
-  --gold: #b77818;
+  --ink: #24221d;
+  --muted: #62594e;
+  --paper: #fffdf7;
+  --wash: #fff3d0;
+  --line: #d8cbb8;
+  --green: #005239;
+  --brown: #6b4f36;
+  --gold: #ffc733;
   --white: #ffffff;
-  --shadow: 0 24px 60px rgba(23, 21, 18, 0.12);
+  --shadow: 0 24px 60px rgba(58, 43, 29, 0.12);
   --max: 1120px;
 }
 
@@ -42,7 +42,12 @@ a {
 }
 
 a:hover {
-  color: var(--rust);
+  color: var(--brown);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 4px;
 }
 
 .skip-link {
@@ -65,8 +70,8 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid rgba(216, 222, 210, 0.9);
-  background: rgba(255, 253, 248, 0.94);
+  border-bottom: 3px solid var(--gold);
+  background: rgba(255, 253, 247, 0.96);
   backdrop-filter: blur(16px);
 }
 
@@ -81,7 +86,7 @@ a:hover {
 }
 
 .brand {
-  color: var(--ink);
+  color: var(--green);
   font-family: "Iowan Old Style", "Charter", Georgia, serif;
   font-size: 1.15rem;
   font-weight: 700;
@@ -127,7 +132,7 @@ a:hover {
 .label,
 .paper-status {
   margin: 0 0 0.75rem;
-  color: var(--rust);
+  color: var(--brown);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -138,6 +143,7 @@ a:hover {
 h1,
 h2,
 h3 {
+  color: var(--green);
   font-family: "Iowan Old Style", "Charter", Georgia, serif;
   line-height: 1.08;
   margin: 0;
@@ -192,20 +198,21 @@ h3 {
 
 .button.primary {
   border-color: var(--green);
-  background: var(--green);
-  color: var(--white);
+  background: var(--gold);
+  color: var(--green);
 }
 
 .button:hover,
 .button:focus {
-  border-color: var(--rust);
-  color: var(--rust);
+  border-color: var(--brown);
+  color: var(--brown);
 }
 
 .button.primary:hover,
 .button.primary:focus {
-  background: var(--rust);
-  color: var(--white);
+  border-color: var(--green);
+  background: var(--green);
+  color: var(--gold);
 }
 
 .portrait {
@@ -229,15 +236,16 @@ h3 {
 }
 
 .quick-info {
-  border-block: 1px solid var(--line);
-  background: var(--white);
+  border-block: 1px solid var(--green);
+  background: var(--green);
+  color: var(--white);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .quick-info > div {
   padding: 1.35rem clamp(1.2rem, 3vw, 2.4rem);
-  border-right: 1px solid var(--line);
+  border-right: 1px solid rgba(255, 199, 51, 0.35);
 }
 
 .quick-info > div:last-child {
@@ -247,6 +255,10 @@ h3 {
 .label {
   display: block;
   margin-bottom: 0.35rem;
+}
+
+.quick-info .label {
+  color: var(--gold);
 }
 
 .section {
@@ -262,6 +274,7 @@ h3 {
 
 .band > .section-heading,
 .band > .research-grid,
+.band > .paper-list,
 .band > .teaching-list {
   max-width: var(--max);
   margin-left: auto;
@@ -288,7 +301,7 @@ h3 {
 }
 
 .research-grid p,
-.paper p,
+.paper p:not(.paper-status),
 .contact p {
   color: var(--muted);
 }
@@ -431,7 +444,7 @@ address a {
 
   .quick-info > div {
     border-right: 0;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid rgba(255, 199, 51, 0.35);
   }
 
   .quick-info > div:last-child {
