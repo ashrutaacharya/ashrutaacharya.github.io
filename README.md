@@ -6,7 +6,8 @@ Static personal website for an academic/professional job-market year.
 
 - `index.html`: homepage content and structure.
 - `styles.css`: dependency-free responsive styling.
-- `cv.pdf`: public CV. Use the version without personal phone number.
+- `industry-resume.pdf`: public Industry Resume, with personal phone number omitted.
+- `cv.pdf`: legacy CV retained for existing direct links.
 - `assets/ashruta-acharya.jpg`: public headshot from the George Mason University profile page.
 - `AGENTS.md`: site brief and maintenance rules.
 
@@ -36,5 +37,9 @@ Wait for the **pages build and deployment** workflow to finish in GitHub Actions
 then refresh the live website. Saving a local file or refreshing a browser does
 not publish local changes.
 
-The public CV is included as `cv.pdf` at the repository root. Stage that file
-explicitly when updating it.
+The current public document is `industry-resume.pdf`, labeled **Industry Resume**
+throughout the website. Stage that file explicitly when updating it, and keep
+personal phone numbers out of public copies.
+
+When the separate research CV is ready, add it as `research-cv.pdf` and label its
+links **Research CV**. The existing `cv.pdf` is retained for legacy direct links.
