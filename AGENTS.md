@@ -10,7 +10,8 @@ The site should be clean, accessible, mobile-friendly, and easy to maintain.
 - Do not invent publications, positions, degrees, awards, courses, or affiliations.
 - Use concise professional language.
 - Keep the homepage skimmable.
-- Preserve all links to CV, papers, Google Scholar, GitHub, and contact information.
+- Preserve all links to resumes/CVs, papers, Google Scholar, and contact information.
+- Do not display GitHub profile links unless the user requests them.
 - Do not include home address, personal phone number, private drafts, or confidential data.
 
 ## Design rules
@@ -20,6 +21,12 @@ The site should be clean, accessible, mobile-friendly, and easy to maintain.
 - Use readable typography and strong contrast.
 - Add alt text for images.
 - Keep dependencies minimal.
+
+## Git workflow
+
+- Leave changes uncommitted for the user to review and commit unless explicitly asked to commit.
+- Do not push unless the user explicitly instructs you to push. A website edit request is not permission to push.
+- Use short, casual, past-tense commit messages, such as `Updated industry resume`.
 
 ## Verification
 
