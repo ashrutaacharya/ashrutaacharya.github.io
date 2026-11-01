@@ -19,6 +19,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
@@ -170,7 +171,14 @@ h3 {
   color: var(--green);
 }
 
-.hero-copy p:not(.eyebrow):not(.lead) {
+.methods {
+  margin: 0 0 1rem;
+  color: var(--brown);
+  font-size: 0.95rem;
+  font-weight: 750;
+}
+
+.hero-copy p:not(.eyebrow):not(.lead):not(.methods) {
   max-width: 64ch;
   color: var(--muted);
   overflow-wrap: break-word;
@@ -395,6 +403,10 @@ address a {
 }
 
 @media (max-width: 820px) {
+  html {
+    scroll-padding-top: 9rem;
+  }
+
   body {
     font-size: 16px;
   }

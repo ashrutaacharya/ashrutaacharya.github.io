@@ -7,6 +7,7 @@ Static personal website for an academic/professional job-market year.
 - `index.html`: homepage content and structure.
 - `styles.css`: dependency-free responsive styling.
 - `industry-resume.pdf`: public Industry Resume, with personal phone number omitted.
+- `job-market-paper.pdf`: current Job Market Paper, copied unchanged from the supplied draft.
 - `cv.pdf`: legacy CV retained for existing direct links.
 - `assets/ashruta-acharya.jpg`: public headshot from the George Mason University profile page.
 - `AGENTS.md`: site brief and maintenance rules.
@@ -15,7 +16,7 @@ Static personal website for an academic/professional job-market year.
 
 - George Mason University profile: https://economics.gmu.edu/people/aachar3
 - Becker Friedman Institute profile: https://bfi.uchicago.edu/people/ashruta-acharya/
-- SSRN working paper page: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5360466
+- Published degrowth article: https://doi.org/10.1111/coep.70031
 - GitHub profile: https://github.com/ashrutaacharya
 
 ## Publishing Notes
@@ -29,7 +30,7 @@ After saving website edits, stage the files you changed, commit, and push. For e
 
 ```sh
 git add index.html styles.css
-git commit -m "Update website"
+git commit -m "Updated website"
 git push origin main
 ```
 
